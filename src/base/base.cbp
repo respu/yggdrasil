@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="base" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="base" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="/home/casserolle/dev/mongo_emu/src/" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="base" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add option="-Wall" />
+					<Add directory="/home/casserolle/dev/mongo_emu/src/" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+		</Compiler>
+		<Unit filename="async/io_service_pool.hpp" />
+		<Unit filename="basic_types.hpp" />
+		<Unit filename="context.hpp" />
+		<Unit filename="defines.hpp" />
+		<Unit filename="exception.cpp" />
+		<Unit filename="exception.hpp" />
+		<Unit filename="format.hpp" />
+		<Unit filename="macros.hpp" />
+		<Unit filename="runtime/pid_file.cpp" />
+		<Unit filename="runtime/pid_file.hpp" />
+		<Unit filename="threading/active_object.cpp" />
+		<Unit filename="threading/active_object.hpp" />
+		<Unit filename="threading/shared_queue.hpp" />
+		<Unit filename="timing/time_util.cpp" />
+		<Unit filename="timing/time_util.hpp" />
+		<Unit filename="timing/timestamp.cpp" />
+		<Unit filename="timing/timestamp.hpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

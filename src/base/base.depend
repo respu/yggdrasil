@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1365717148 source:/home/casserolle/dev/mongo_emu/src/base/exception.cpp
+	"base/exception.hpp"
+	<execinfo.h>
+	<stdlib.h>
+
+1365720226 /home/casserolle/dev/mongo_emu/src//base/exception.hpp
+	"base/format.hpp"
+	<exception>
+
+1365716458 /home/casserolle/dev/mongo_emu/src//base/format.hpp
+	<boost/format.hpp>
+
+1365717353 source:/home/casserolle/dev/mongo_emu/src/base/timing/timestamp.cpp
+	"base/timing/timestamp.hpp"
+	<sys/time.h>
+	<stdio.h>
+	<inttypes.h>
+	<boost/static_assert.hpp>
+
+1365717342 /home/casserolle/dev/mongo_emu/src//base/timing/timestamp.hpp
+	"base/basic_types.hpp"
+	<boost/operators.hpp>
+
+1365717448 /home/casserolle/dev/mongo_emu/src//base/basic_types.hpp
+	<cstdint>
+
+1365720112 source:/home/casserolle/dev/mongo_emu/src/base/runtime/pid_file.cpp
+	"base/runtime/pid_file.hpp"
+	"base/exception.hpp"
+	<csignal>
+	<boost/filesystem/convenience.hpp>
+	<boost/filesystem/fstream.hpp>
+	<boost/filesystem/operations.hpp>
+	<sys/types.h>
+
+1365720092 /home/casserolle/dev/mongo_emu/src//base/runtime/pid_file.hpp
+	"base/macros.hpp"
+	<boost/filesystem/path.hpp>
+
+1365719436 /home/casserolle/dev/mongo_emu/src//base/macros.hpp
+
+1365773792 source:/home/casserolle/dev/mongo_emu/src/base/threading/active_object.cpp
+	"base/threading/active_object.hpp"
+
+1365773820 /home/casserolle/dev/mongo_emu/src//base/threading/active_object.hpp
+	<thread>
+	<functional>
+	<condition_variable>
+	<mutex>
+	<memory>
+	"base/threading/shared_queue.hpp"
+
+1365773523 /home/casserolle/dev/mongo_emu/src//base/threading/shared_queue.hpp
+	<queue>
+	<mutex>
+	<exception>
+	<condition_variable>
+
